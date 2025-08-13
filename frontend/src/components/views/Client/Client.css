@@ -1,0 +1,8 @@
+#clients {
+  padding: 0 1rem;
+  text-align: start;
+}
+
+.client-input {
+  min-width: 400px;
+}
