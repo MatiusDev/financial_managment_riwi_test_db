@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "f41b09c5-bff4-40ac-a1e9-9b8bbb6c7d55",
+		"name": "RIWI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6090155"
+	},
+	"item": [
+		{
+			"name": "RIWI_DB_TEST",
+			"item": [
+				{
+					"name": "CLIENTS",
+					"item": [
+						{
+							"name": "GET CLIENTS",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/clients/",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"clients",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UPLOAD CLIENTS",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/home/matiusdev/docs/workspace/financial_managment/data/clientes.csv"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3000/api/clients/upload",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"clients",
+										"upload"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PLATFORMS",
+					"item": [
+						{
+							"name": "UPLOAD PLAFORMS",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/home/matiusdev/docs/workspace/financial_managment/data/plataformas.csv"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3000/api/platforms/upload",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"platforms",
+										"upload"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "INVOICES",
+					"item": [
+						{
+							"name": "UPLOAD INVOICES",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/home/matiusdev/docs/workspace/financial_managment/data/facturas.csv"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3000/api/invoices/upload",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"invoices",
+										"upload"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "TRANSACTIONS",
+					"item": [
+						{
+							"name": "UPLOAD TRANSACTIONS",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/home/matiusdev/docs/workspace/financial_managment/data/transacciones.csv"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3000/api/transactions/upload",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"transactions",
+										"upload"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
